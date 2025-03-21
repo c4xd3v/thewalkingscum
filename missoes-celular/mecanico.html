@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+    <title>MISSOES DO SCUM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e1c26;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #091219;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            flex-direction: column;
+        }
+        .header img {
+            width: 350px;
+            height: 150px;
+            display: inline-block;
+        }
+        .header h1 {
+            margin-top: 20px;
+            color: #ff9800;
+        }
+        .content {
+            width: 100%;
+            max-width: 2000px;
+            background-color: #091219;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .NÍVEL {
+            margin-bottom: 20px;
+        }
+        .NÍVEL h2 {
+            color: #ff9800;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #2c2c2c;
+        }
+        .note {
+            color: #ff9800;
+            font-size: 0.9em;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #091219;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ff9800;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #091219;
+            color: #ff9800;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: #ff9800;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #091219;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+
+            <img src="https://i.imgur.com/rLel7dE.png" alt="Profile Picture">
+            <h1>MISSÕES DO SCUM</h1>
+            <br>
+            <div class="navbar">
+                <a href="../index.html">Página Inicial</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Missões de Celular</button>
+                    <div class="dropdown-content">
+                        <a href="#">Armeiro</a>
+                        <a href="mecanico.html">Mecânico</a>
+                        <a href="#">Médico</a>
+                        <a href="generalgoods.html">General Goods</a>
+                    </div>
+                </div>
+                <a href="../receitas-culinaria/index.html">Culinária</a>
+            </div>
+        </div>
+        <div class="note">
+            <center>
+            <h3>
+            <p>As recompensas de ofertas especiais da loja não acumulam. <br>
+            Você deve comprar todas as recompensas dadas em uma oferta especial antes de poder recebê-las novamente.<br>
+            A durabilidade dos itens não importa, até mesmo itens de 1% serão aceitos.<br>
+            Número de utilizações mínimas necessárias mostrado quando aplicável.<br></p>
+            <p><b><span style="color: white;">Trader / Progressão de Nível</span></b><br>
+            3 Missões de Nível 1 desbloqueiam o próximo trader<br>
+            6 Missões de Nível 1 desbloqueiam o Nível 2<br>
+            12 Missões de Nível 2 desbloqueiam o Nível 3</p>
+        </h3>
+    </center>
+        </div>
+        <div class="content">
+            <div class="NÍVEL">
+                <h1>Ficha Informativa das Missões</h1>
+                <h2>MECÂNICO</h2>
+                <h2>NIVEL 1</h2>
+                <table>
+                    <tr>
+                        <th>Itens Necessários</th>
+                        <th>Quantidade</th>
+                        <th>Fama</th>
+                        <th>Dinheiro</th>
+                        <th>Recompensa de Oferta Especial</th>
+                    </tr>
+                    <tr>
+                        <td>Macaco</td>
+                        <td>1</td>
+                        <td>5 FP</td>
+                        <td>$700</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Metal Scraps</td>
+                        <td>20</td>
+                        <td>5 FP</td>
+                        <td>$500</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Cabos de Bateria de Carro</td>
+                        <td>1</td>
+                        <td>5 FP</td>
+                        <td>$630</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Fluido de Freio</td>
+                        <td>1 (Qualquer Uso)</td>
+                        <td>5 FP</td>
+                        <td>$550</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Kit de Reparo de Veiculos</td>
+                        <td>1 (Qualquer Uso)</td>
+                        <td>5 FP</td>
+                        <td>$660</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Kit de Reparo de Pneus</td>
+                        <td>1 (Qualquer Uso)</td>
+                        <td>5 FP</td>
+                        <td>$600</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Kit de Reparo de Avião</td>
+                        <td>1 (Qualquer Uso)</td>
+                        <td>5 FP</td>
+                        <td>$3000</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Chave Inglesa</td>
+                        <td>1</td>
+                        <td>5 FP</td>
+                        <td>$550</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Cantil de Gasolina Pequeno</td>
+                        <td>1 (Pode estar vazio)</td>
+                        <td>5 FP</td>
+                        <td>$700</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Filtro de óleo</td>
+                        <td>1</td>
+                        <td>5 FP</td>
+                        <td>$650</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Desativar TVs</td>
+                        <td>3 a 5</td>
+                        <td>5 FP</td>
+                        <td>$800</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="NÍVEL">
+                <h2>NÍVEL 2</h2>
+                <table>
+                    <tr>
+                        <th>Itens Necessários</th>
+                        <th>Quantidade</th>
+                        <th>Fama</th>
+                        <th>Dinheiro</th>
+                        <th>Recompensa de Oferta Especial</th>
+                    </tr>
+                    <tr>
+                        <td>Bateria de Motocicleta</td>
+                        <td>1</td>
+                        <td>10 FP</td>
+                        <td>$1600</td>
+                        <td>1x Suporte de Armazenamento (Pequeno) $1000 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Para-lama Dirtbike</td>
+                        <td>1</td>
+                        <td>10 FP</td>
+                        <td>$1450</td>
+                        <td>1x Faróis Dianteiro Dirtbike $150 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Protetor Dianteiro Dirtbike</td>
+                        <td>1</td>
+                        <td>10 FP</td>
+                        <td>$1480</td>
+                        <td>1x Crânio Hellrider de Dirtbike $200 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Faróis Dianteiro Dirtbike</td>
+                        <td>1</td>
+                        <td>10 FP</td>
+                        <td>$1580</td>
+                        <td>1x Protetor Dianteiro Dirtbike $200 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Lataria Dirtbike</td>
+                        <td>1 (Qualquer Tipo)</td>
+                        <td>10 FP</td>
+                        <td>$1550</td>
+                        <td>1x Kit Reparo de Carro $1200 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Crânio Hellrider de Dirtbike</td>
+                        <td>1</td>
+                        <td>10 FP</td>
+                        <td>$1580</td>
+                        <td>1x Para-lama Dirtbike $200 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Rodas Dirtbike</td>
+                        <td>1 (frente ou atrás)</td>
+                        <td>10 FP</td>
+                        <td>$1400</td>
+                        <td>1x Lataria Hellrider Dirtbike $1000 - 0 FP // 1x Lataria Dirtbike $1000 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Luz de Freio Dirtbike</td>
+                        <td>1</td>
+                        <td>10 FP</td>
+                        <td>$1200</td>
+                        <td>1x Proteção de Roda Dianteiro Dirtbike $150 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Cantil de Gasolina (Grande)</td>
+                        <td>1</td>
+                        <td>5 FP</td>
+                        <td>$1500</td>
+                        <td>2x Cantil de Gasolina (Pequeno) $150 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Bateria de Carro</td>
+                        <td>1</td>
+                        <td>10 FP</td>
+                        <td>$1600</td>
+                        <td>1x Macaco $1500 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Sabotagem de Elevadores de Carros</td>
+                        <td>3 a 5</td>
+                        <td>20 FP</td>
+                        <td>$2000</td>
+                        <td>1x Kit Reparo de Carro $800 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Desativar Geradores</td>
+                        <td>3 a 5</td>
+                        <td>20 FP</td>
+                        <td>$2000</td>
+                        <td>1x Macaco $1000 - 0 FP</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="NÍVEL">
+                <h2>NÍVEL 3</h2>
+                <table>
+                    <tr>
+                        <th>Itens Necessários</th>
+                        <th>Quantidade</th>
+                        <th>Fama</th>
+                        <th>Dinheiro</th>
+                        <th>Recompensa de Oferta Especial</th>
+                    </tr>
+                    <tr>
+                        <td>Alternador de Rager</td>
+                        <td>1</td>
+                        <td>20 FP</td>
+                        <td>$5000</td>
+                        <td>4x Rodas Rager $2000 - 0 FP // 2x Banco de Motorista Rager $2500 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Alternador de Wolfswagen</td>
+                        <td>1</td>
+                        <td>20 FP</td>
+                        <td>$4000</td>
+                        <td>4x Rodas WW $800 - 0 FP // 2x Banco de Motorista WW $600 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Alternador de Laika</td>
+                        <td>1</td>
+                        <td>20 FP</td>
+                        <td>$4000</td>
+                        <td>4x Rodas Laika $800 - 0 FP // 2x Banco de Motorista Laika $600 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Para-choque de Rager</td>
+                        <td>1 (frente ou atrás)</td>
+                        <td>20 FP</td>
+                        <td>$3500</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Para-choque de Wolfswagen</td>
+                        <td>1 (frente ou atrás)</td>
+                        <td>20 FP</td>
+                        <td>$3500</td>
+                        <td>3x Kit Reparo de Carro $900 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Para-choque de Laika</td>
+                        <td>1 (frente ou atrás)</td>
+                        <td>20 FP</td>
+                        <td>$3500</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Rodas da Rager</td>
+                        <td>1 (frente ou atrás)</td>
+                        <td>20 FP</td>
+                        <td>$3600</td>
+                        <td>1x Suporte de Armazenamento (Grande) $2000 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Rodas do Wolfswagen</td>
+                        <td>1 (frente ou atrás)</td>
+                        <td>20 FP</td>
+                        <td>$3600</td>
+                        <td>1x Suporte de Armazenamento (Grande) $2000 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Rodas do Laika</td>
+                        <td>1 (frente ou atrás)</td>
+                        <td>20 FP</td>
+                        <td>$3600</td>
+                        <td>1x Suporte de Armazenamento (Grande) $2000 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Faróis - Rager, Wolfswagen, Laika</td>
+                        <td>1 de cada (frente ou atrás)</td>
+                        <td>20 FP</td>
+                        <td>$3050</td>
+                        <td>5x Galão de Gasolina $300 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Desconecte os cabos Sentry - Z1 Torpedo</td>
+                        <td>3 a 5</td>
+                        <td>30 FP</td>
+                        <td>$4000</td>
+                        <td>4x de cada roda do carro WW - Laika $600 Rager $2000 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Manter as luzes de sinalização - C2 Radio St.</td>
+                        <td>3 a 5</td>
+                        <td>20 FP</td>
+                        <td>$3000</td>
+                        <td>1x Suporte de Armazenamento (Grande) $1000 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Adulterar os controles da pista - Z3 Track</td>
+                        <td>1</td>
+                        <td>20 FP</td>
+                        <td>$3000</td>
+                        <td>4x Rodas de RIS(Quad) $800 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Desconecte os cabos do painel de controle - Trainyard</td>
+                        <td>3 a 5</td>
+                        <td>25 FP</td>
+                        <td>$4000</td>
+                        <td>1x Cada alternador de veículo WW $1500 - Laika $1200 - Rager $2500 - 0 FP</td>
+                    </tr>
+                    <tr>
+                        <td>Investigar acidentes de carro - D0 Military</td>
+                        <td>12</td>
+                        <td>35 FP</td>
+                        <td>$5000</td>
+                        <td>1x Cada assento dianteiro do veículo WW $500 - Laika $500 - Rager $2000 - 0 FP</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            <footer>
+                <p>&copy; 2025 THE WALKING SCUM BR (PVE). Todos os direitos reservados.<br></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

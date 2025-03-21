@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+    <title>TABELA DE RECEITAS SCUM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e1c26;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #091219;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            flex-direction: column;
+        }
+        .header img {
+            width: 350px;
+            height: 150px;
+            display: inline-block;
+        }
+        .header h1 {
+            margin-top: 20px;
+            color: #ff9800;
+        }
+        .content {
+            width: 100%;
+            max-width: 2000px;
+            background-color: #091219;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .NÍVEL {
+            margin-bottom: 20px;
+        }
+        .NÍVEL h2 {
+            color: #ff9800;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #2c2c2c;
+        }
+        .note {
+            color: #ff9800;
+            font-size: 0.9em;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #091219;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ff9800;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #091219;
+            color: #ff9800;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: #ff9800;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #091219;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+
+            <img src="https://i.imgur.com/rLel7dE.png" alt="Profile Picture">
+            <h1>TABELA DE RECEITAS SCUM</h1>
+            <br>
+            <div class="navbar">
+                <a href="../index.html">Página Inicial</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Missões de Celular</button>
+                    <div class="dropdown-content">
+                        <a href="#">Armeiro</a>
+                        <a href="../missoes-celular/mecanico.html">Mecânico</a>
+                        <a href="#">Médico</a>
+                        <a href="../missoes-celular/generalgoods.html">General Goods</a>
+                    </div>
+                </div>
+                <a href="index.html">Culinária</a>
+            </div>
+        </div>
+        <div class="note">
+            <center>
+            <h3>
+            <p>Créditos: @AQueen <br>
+        </h3>
+    </center>
+        </div>
+        <div class="content">
+            <div class="NÍVEL">
+                <h1>Ficha Informativa das Receitas</h1>
+                <h2>RECEITAS</h2>
+                <table>
+                    <tr>
+                        <th>Receita</th>
+                        <th>Utensílios necessários</th>
+                        <th>Tempo de Cozimento Ideal (do jogo)</th>
+                        <th>Ingredientes</th>
+                    </tr>
+                    <tr>
+                        <td>Arroz Frito</td>
+                        <td>Panela, Frigideira</td>
+                        <td>20min</td>
+                        <td>4 arroz + 1 alho + 1 ovo + 1 cebola + 1 ervilha + 1 cenoura + 250ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Ave do General Tso</td>
+                        <td>Panela, Frigideira</td>
+                        <td>30min</td>
+                        <td>1 carne bife de ave + 1 arroz + 1 pimentão verde + 500ml água + 1 brócolis</td>
+                    </tr>
+                    <tr>
+                        <td>Arroz e ervilhas com carne</td>
+                        <td>Panela, Frigideira</td>
+                        <td>50 min</td>
+                        <td>4 arroz + 1 ervilha + 1000ml água + 2 bife de carne vermelha + 1 cebola</td>
+                    </tr>
+                    <tr>
+                        <td>Szechuan apimentado</td>
+                        <td>Panela, Frigideira</td>
+                        <td>30 min</td>
+                        <td>4 arroz + 1000 ml água + 1 bife carne vermelha + 1 cebola + 1 pimenta dedo de moça + 1 pimentão verde</td>
+                    </tr>
+                    <tr>
+                        <td>Pato Laqueado</td>
+                        <td>Panela, Frigideira</td>
+                        <td>20 min</td>
+                        <td>4 arroz + 1 frango inteiro + 1 cebola + 1 pepino + 1000 ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Refogado de carne com brócolis</td>
+                        <td>Panela, Frigideira</td>
+                        <td>30 min</td>
+                        <td>1 bife de carne vermelha + 4 arroz + 500ml água + 1 pimentão verde + 1 cebola + 1 brócolis</td>
+                    </tr>
+                    <tr>
+                        <td>Macarrão com Cogumelos</td>
+                        <td>Panela, Frigideira</td>
+                        <td>30min</td>
+                        <td>4 cogumelos + 1 pcte de macarrão + 1000ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Massa Penne ao molho Pesto</td>
+                        <td>Panela, Frigideira</td>
+                        <td>30 min</td>
+                        <td>1 pcte de macarrão + 1 tomate + 1 queijo + 1000ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Espaguete a Bolonhesa</td>
+                        <td>Panela, Frigideira</td>
+                        <td>30 min</td>
+                        <td>1 pcte de macarrão + 1 queijo + 1000 ml água + 1 cebola + 1 bife de carne vermelha</td>
+                    </tr>
+                    <tr>
+                        <td>Espaguete a milanesa</td>
+                        <td>Panela, Frigideira</td>
+                        <td>30 min</td>
+                        <td>1 pcte de macarrão + 1 tomate + 1 queijo + 1000ml água + 1 cebola</td>
+                    </tr>
+                    <tr>
+                        <td>Massa com Legumes</td>
+                        <td>Panela, Frigideira</td>
+                        <td>30 min</td>
+                        <td>2 legumes quaisquer + 1 pcte de macarrão + 1000ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Chow Mein</td>
+                        <td>Frigideira</td>
+                        <td>60 min</td>
+                        <td>1 pcte de macarrão + 2 bifes de carne de ave + 1000 ml água + 1 legume quaisquer</td>
+                    </tr>
+                    <tr>
+                        <td>Espaguete Kung Pao</td>
+                        <td>Frigideira</td>
+                        <td>60 min</td>
+                        <td>1 pcte de macarrão + 1000 ml água + 1 bife de carne de ave + 1 cebola + 1 pimenta vermelha + 1 pimentão verde</td>
+                    </tr>
+                    <tr>
+                        <td>Macarrão Szechuan</td>
+                        <td>Frigideira</td>
+                        <td>60 min</td>
+                        <td>1 pcte de macarrão + 1000 ml água + 2 bife de carne vermelha + 1 cebola + 1 pimenta vermelha + 1 pimentão verde</td>
+                    </tr>
+                    <tr>
+                        <td>Massas com frutos do Mar</td>
+                        <td>Panela, Frigideira</td>
+                        <td>45 min</td>
+                        <td>1 pcte de macarrão + 1 lata Mix de frutos do mar + 1 nata + 1000ml água + 1 alho + 1 cebola</td>
+                    </tr>
+                    <tr>
+                        <td>Panquecas</td>
+                        <td>Frigideira</td>
+                        <td>6 min</td>
+                        <td>3 pcte farinha + 1 ovo + 250ml leite + 250ml água + 2 pcte bicarbonato de sódio</td>
+                    </tr>
+                    <tr>
+                        <td>Cogumelo Grelhado</td>
+                        <td>Grelha, frigideira, churrasqueira improvisada</td>
+                        <td>5 min</td>
+                        <td>1 cogumelo</td>
+                    </tr>
+                    <tr>
+                        <td>Cevapi</td>
+                        <td>Grelha, frigideira, churrasqueira improvisada</td>
+                        <td>10 min</td>
+                        <td>1 bife de carne vermelha + 2 pão</td>
+                    </tr>
+                    <tr>
+                        <td>Peixe Grelhado</td>
+                        <td>Grelha, frigideira, churrasqueira improvisada</td>
+                        <td>5 min</td>
+                        <td>1 file de peixe quaisquer</td>
+                    </tr>
+                    <tr>
+                        <td>Perna de Coelho Grelhada</td>
+                        <td>Grelha, frigideira, churrasqueira improvisada</td>
+                        <td>15 min</td>
+                        <td>1 perna de coelho</td>
+                    </tr>
+                    <tr>
+                        <td>Carne Vermelha Grelhada</td>
+                        <td>Grelha, frigideira, churrasqueira improvisada</td>
+                        <td>8 min</td>
+                        <td>1 carne bife vermelha</td>
+                    </tr>
+                    <tr>
+                        <td>Legume Grelhado</td>
+                        <td>Grelha, frigideira, churrasqueira improvisada</td>
+                        <td>1 min</td>
+                        <td>1 legume quaisquer</td>
+                    </tr>
+                    <tr>
+                        <td>Gyuvech</td>
+                        <td>Panela, Frigideira</td>
+                        <td>90 min</td>
+                        <td>4 arroz + 1 cebola + 500ml água + 1 pimentão verde + 1 abobrinha + 1 cenoura + 1 tomate + 1 bife de carne vermelha</td>
+                    </tr>
+                    <tr>
+                        <td>Hamburger</td>
+                        <td>Grelha, frigideira, churrasqueira improvisada</td>
+                        <td>10 min</td>
+                        <td>1 bife de carne vermelha + 1 pão</td>
+                    </tr>
+                    <tr>
+                        <td>X-burger</td>
+                        <td>Grelha, frigideira, churrasqueira improvisada</td>
+                        <td>10 min</td>
+                        <td>1 bife + 1 pão + 1 queijo</td>
+                    </tr>
+                    <tr>
+                        <td>Linguça Grelhada</td>
+                        <td>Grelha, frigideira, churrasqueira improvisada</td>
+                        <td>4 min</td>
+                        <td>1 bife de carne vermelha + 1 entranha (de animal pequeno ou grande)</td>
+                    </tr>
+                    <tr>
+                        <td>Coxa de ave</td>
+                        <td>Grelha, frigideira, churrasqueira improvisada</td>
+                        <td>15 min</td>
+                        <td>1 coxa de frango</td>
+                    </tr>
+                    <tr>
+                        <td>Ovos fritos</td>
+                        <td>Frigideira</td>
+                        <td>5 min</td>
+                        <td>1 ovo de galinha</td>
+                    </tr>
+                    <tr>
+                        <td>Café preto</td>
+                        <td>Panela, cafeteira turca</td>
+                        <td>5 min</td>
+                        <td>1 pcte café + 500ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Chá</td>
+                        <td>Panela, cafeteira turca</td>
+                        <td>3 min</td>
+                        <td>1 pcte chá + 500ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Café expresso com Panna</td>
+                        <td>Panela, cafeteira turca</td>
+                        <td>5 min</td>
+                        <td>1 pcte café + 500ml água + 100ml leite + 1 nata</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Quente</td>
+                        <td>Panela, cafeteira turca</td>
+                        <td>10 min</td>
+                        <td>1 nata + 1 chocolate + 500ml leite</td>
+                    </tr>
+                    <tr>
+                        <td>Chá Inglês</td>
+                        <td>Panela, cafeteira turca</td>
+                        <td>3 min</td>
+                        <td>1 pcte chá + 500ml água + 100ml leite</td>
+                    </tr>
+                    <tr>
+                        <td>Ensopado de feijão</td>
+                        <td>Panela</td>
+                        <td>120 min</td>
+                        <td>1 bife de carne vermelha + 1 lata de feijão + 1 alho + 1 cebola + 2500ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Rolinho de repolho</td>
+                        <td>Panela</td>
+                        <td>180 min</td>
+                        <td>2 bife de carne vermelha + 1 repolho + 4 arroz + 1000ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Chilli com carne</td>
+                        <td>Panela</td>
+                        <td>60 min</td>
+                        <td>1 bife de carne vermelha + 1 lata de feijão + 2500ml água + 1 alho + 1 milho + 1 pimenta vermelha + 1 tomate</td>
+                    </tr>
+                    <tr>
+                        <td>Paprikash de peixe</td>
+                        <td>Panela</td>
+                        <td>60 min</td>
+                        <td>1 file de peixe de água doce + 1 cebola + 1000ml água + 1 tomate</td>
+                    </tr>
+                    <tr>
+                        <td>Jambalaia</td>
+                        <td>Panela</td>
+                        <td>60 min</td>
+                        <td>2 Bife de carne vermelha + 1 Pimentão verde + 1 lata Mix de frutos do mar + 1 alho + 4 arroz + 1000ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Ensopado de carne</td>
+                        <td>Panela</td>
+                        <td>90 min</td>
+                        <td>1 bife de carne vermelha + 1000ml água + 3 legumes quaisquer + 1 cogumelo</td>
+                    </tr>
+                    <tr>
+                        <td>Goulash</td>
+                        <td>Panela</td>
+                        <td>120 min</td>
+                        <td>1 Bife de carne vermelha + 3 Legumes quaisquer + 1000 ml água + 1 cogumelo</td>
+                    </tr>
+                    <tr>
+                        <td>Ensopados de frutos do mar</td>
+                        <td>Panela</td>
+                        <td>60 min</td>
+                        <td>1 file de peixe de água salgada + 1 cebola + 1000ml água + 1 alho + 1 tomate + 1 lata mix</td>
+                    </tr>
+                    <tr>
+                        <td>Pimentoes recheados</td>
+                        <td>Panela</td>
+                        <td>120 min</td>
+                        <td>2 pimentoes verdes + 2 arroz + 1 cebola + 1000ml água + 1 tomate + 1 bife de carne</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de ave</td>
+                        <td>Panela</td>
+                        <td>20 min</td>
+                        <td>1 frango inteiro + 1 cebola + 1 cenoura + 2000ml água + 1 Pastinaga/Salsinha</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Ovo</td>
+                        <td>Panela</td>
+                        <td>20 min</td>
+                        <td>1 bife de carne de ave + 1 ovo + 2000ml água + 2 pcte de farinha</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa quente e amarga</td>
+                        <td>Panela</td>
+                        <td>20 min</td>
+                        <td>1 bife de carne de ave + 1 cogumelo + 1 ovo + 2 pcte de farinha + 200ml vinagre</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de carne</td>
+                        <td>Panela</td>
+                        <td>20 min</td>
+                        <td>1 osso de qualquer animal + 1 bife de carne bovina + 1 cenoura + 2000ml água + 1 cebola</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de cogumelo</td>
+                        <td>Panela</td>
+                        <td>16 min</td>
+                        <td>3 cogumelos + 1 cebola + 2000ml água + 1 nata + 2 pcte de farinha</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de tomate</td>
+                        <td>Panela</td>
+                        <td>16 min</td>
+                        <td>2 tomates + 1 nata + 2000ml água + 1 queijo + 1 cebola</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Wontons</td>
+                        <td>Panela</td>
+                        <td>20 min</td>
+                        <td>1 bife de carne vermelha + 2000ml água + 1 repolho + 1 pcte macarrão + 1 lata mix de frutos do mar + 1 cebola</td>
+                    </tr>
+                    <tr>
+                        <td>Folhado de Queijo</td>
+                        <td>Forno</td>
+                        <td>90 min</td>
+                        <td>1 queijo + 1 farinha + 1 nata + 1 ovo + 500ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Torta de queijo</td>
+                        <td>Forno</td>
+                        <td>90 min</td>
+                        <td>1 queijo + 1 ovo + 1 nata + 800ml óleo + 6 pcte fatinha + 200ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Batatas Dauphinoise</td>
+                        <td>Forno</td>
+                        <td>90 min</td>
+                        <td>2 batata + 1 queijo + 1 farinha + 200ml leite + 1 nata + 1 manteiga</td>
+                    </tr>
+                    <tr>
+                        <td>Lasanha</td>
+                        <td>Forno</td>
+                        <td>90 min</td>
+                        <td>1 bife de carne vermelha + 1 queijo + 1 cebola + 1 ovo + 5 pcte farinha + 100ml água + 1 nata</td>
+                    </tr>
+                    <tr>
+                        <td>Macarrão com queijo</td>
+                        <td>Forno</td>
+                        <td>30 min</td>
+                        <td>1 pcte de macarrão + 2 queijos + 1000ml água + 500ml leite</td>
+                    </tr>
+                    <tr>
+                        <td>Torta de carne</td>
+                        <td>Forno</td>
+                        <td>90 min</td>
+                        <td>1 bife de carne vermelha + 1 ovo + 1 cebola + 1 óleo + 6 farinha + 200ml água</td>
+                    </tr>
+                    <tr>
+                        <td>Mussaca</td>
+                        <td>Forno</td>
+                        <td>90 min</td>
+                        <td>1 bife de carne vermelha + 2 batatas + 1 cebola + 1 nata + 1 ovo</td>
+                    </tr>
+                    <tr>
+                        <td>Caçarola de Ave</td>
+                        <td>Forno</td>
+                        <td>90 min</td>
+                        <td>2 bife de carne de ave + 1 cebola + 1 azeitona + 500ml água + 1 lata feijão</td>
+                    </tr>
+                    <tr>
+                        <td>Torta de maçã</td>
+                        <td>Forno</td>
+                        <td>90 min</td>
+                        <td>2 maças + 5 pcte farinha + 1 gordura animal + 5 açúcar + 1 cr bicarbonato de sódio</td>
+                    </tr>
+                    <tr>
+                        <td>Bolo de banana</td>
+                        <td>Forno</td>
+                        <td>90 min</td>
+                        <td>2 bananas + 1 ovo + 5 pcte farinha + 5 pcte açúcar + 1 nata</td>
+                    </tr>
+                    <tr>
+                        <td>Pão</td>
+                        <td>Forno</td>
+                        <td>15 min</td>
+                        <td>1 pcte farinha + 100ml água + 500ml água + 2 bicarbonato de sódio + 1 fermento</td>
+                    </tr>
+                    <tr>
+                        <td>Bolo de chocolate</td>
+                        <td>Forno</td>
+                        <td>60 min</td>
+                        <td>2 chocolate + 1 ovo + 5 pcte farinha + 5 pcte açúcar + 1 nata</td>
+                    </tr>
+                    <tr>
+                        <td>Bolo de creme</td>
+                        <td>Forno</td>
+                        <td>120 min</td>
+                        <td>2 ovos + 5 pcte farinha + 250ml água + 5 pcte açúcar + 1 nata</td>
+                    </tr>
+                    <tr>
+                        <td>Bolo Lamington</td>
+                        <td>Forno</td>
+                        <td>80 min</td>
+                        <td>5 pcte farinha + 1 ovo + 5 pcte açúcar + 500ml leite + 1 chocolate + 1 coco + 300ml óleo + 2 bicarbonato de sódio</td>
+                    </tr>
+                    <tr>
+                        <td>Bacalava</td>
+                        <td>Forno</td>
+                        <td>120 min</td>
+                        <td>5 pcte farinha + 250ml água + 1 manteiga + 1 pcte açúcar + 2 noz</td>
+                    </tr>
+                    <tr>
+                        <td>Cheesecake</td>
+                        <td>Forno</td>
+                        <td>60 min</td>
+                        <td>1 ovo + 2 pcte farinha + 5 pcte açúcar + 1 nata + 1 café + 1 queijo</td>
+                    </tr>
+                    <tr>
+                        <td>Rocombole de chocolate</td>
+                        <td>Forno</td>
+                        <td>45 min</td>
+                        <td>1 chocolate + 2 ovo + 1 pcte farinha + 5 pcte açúcar + 1 nata + 1 manteiga + 1 bicarbonato de sódio</td>
+                    </tr>
+                    <tr>
+                        <td>Bolo inglês</td>
+                        <td>Forno</td>
+                        <td>120 min</td>
+                        <td>2 maças + 1 ovo + 5 pcte farinha + 5 pctes açúcar + 200ml leite + 1 bicarbonato de sódio</td>
+                    </tr>
+                    <tr>
+                        <td>Bolacha para chá</td>
+                        <td>Forno</td>
+                        <td>30 min</td>
+                        <td>1 ovo + 5 pcte açúcar + 5 pcte farinha + 200ml leite + 2 bicarbonato de sódio + 1 nata</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza capricciosa</td>
+                        <td>Forno</td>
+                        <td>10 min</td>
+                        <td>100ml leite + 300ml água + 5 pcte farinha + 1 queijo + 1 fermento + 1 tomate + 1 spon + 1 cogumelo</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Funghi</td>
+                        <td>Forno</td>
+                        <td>10 min</td>
+                        <td>100ml leite + 300ml água + 5 pcte farinha + 1 queijo + 1 fermento + 1 tomate + 2 cogumelos</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Funghi</td>
+                        <td>Forno</td>
+                        <td>10 min</td>
+                        <td>100ml leite + 300ml água + 5 pcte farinha + 1 queijo + 1 fermento + 1 tomate + 2 cogumelos</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Havaiana</td>
+                        <td>Forno</td>
+                        <td>10 min</td>
+                        <td>100ml leite + 300ml água + 5 pcte farinha + 1 queijo + 1 fermento + 1 spon + 1 abacaxi + 1 tomate</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Napolitana</td>
+                        <td>Forno</td>
+                        <td>10 min</td>
+                        <td>300ml água + 5 farinha + 1 queijo + 1 fermento + 1 tomate</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Frutti Di Mare</td>
+                        <td>Forno</td>
+                        <td>10 min</td>
+                        <td>100ml leite + 300ml água + 5 farinha + 1 queijo + 1 fermento + 1 tomate + 1 lata de mix de frutos do mar</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza vegetariana</td>
+                        <td>Forno</td>
+                        <td>10 min</td>
+                        <td>100ml leite + 300ml água + 5 farinha + 1 queijo + 1 fermento + 1 tomate + 1 legume quaisquer + 1 cogumelo</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            <footer>
+                <p>&copy; 2025 THE WALKING SCUM BR (PVE). Todos os direitos reservados.<br></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
